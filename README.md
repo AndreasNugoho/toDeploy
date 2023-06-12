@@ -208,6 +208,15 @@ run api in `postman`
 ```
 https://todeploy-production.up.railway.app/products
 ```
+#### Data Product   
+```json
+{
+   "title": "Dell Alienware",
+   "price": 111,
+   "stock": 12,
+   "CategoryId" : 4
+}
+```
 #### Endpoint create product hanya boleh di akses oleh admin
 #### Token Admin 
 ```json
@@ -216,6 +225,7 @@ https://todeploy-production.up.railway.app/products
 }
 ```
 ![Alt text](images/create_products.png)
+
 <br>
 <br>
 
