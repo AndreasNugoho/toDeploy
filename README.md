@@ -8,8 +8,18 @@ npm run start (for migrate all)
 npm run admin (for seeder admin)
 ```
 
-````
-Users Admin:
-* email: admin@gmail.com
-* password : 123456
-````
+## Available seed admin:
+```json
+{
+   "email": "admin@gmail.com"
+   "password": "123456"
+}
+```
+
+##Link Railway
+https://todeploy-production.up.railway.app/
+
+## Notes
+Sesuaikan `config` dengan database postgres device. <br>
+Port dapat disesuaikan di `.env`
+
