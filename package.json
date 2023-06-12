@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js",
-    "admin": "npx sequelize db:seed --seed 20230523024124-seeding_admin.js"
+    "start": "npx sequelize db:migrate",
+    "admin": "npx sequelize db:seed --seed 20230523024124-seeding_admin.js",
+    "start:prod": "NODE_ENV=production npx sequelize db:migrate"
   },
   "repository": {
     "type": "git",

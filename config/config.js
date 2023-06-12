@@ -18,12 +18,12 @@ const config = {
     port: process.env.DB_PORT
   },
   production: {
-    username: process.env.DB_USERNAME,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
-    host: process.env.DB_HOST,
+    username: process.env.PGUSER,
+    password: process.env.PGPASSWORD,
+    database: process.env.PGDATABASE,
+    host: process.env.PGHOST,
     dialect: "postgres",
-    port: process.env.DB_PORT
+    port: process.env.PGPORT
   }
 }
 
