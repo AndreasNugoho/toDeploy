@@ -286,14 +286,18 @@ https://todeploy-production.up.railway.app/products
 ```
 https://todeploy-production.up.railway.app/products
 ```
-#### Endpoint PATCH product hanya boleh di akses oleh admin
+#### Endpoint DELETE product hanya boleh di akses oleh admin
 ![Alt text](images/delete_product.png)
 
 <br>
 <br>
 
-
-
+# Transaction API Testing
+run api in `postman` 
+### POST /transactions
+### GET /transactions/user
+### GET /transactions/admin
+### GET /transactions/:transactionId
 
 
 
