@@ -121,6 +121,17 @@ https://todeploy-production.up.railway.app/users/topup
 #### Header Token
 ![Alt text](images/header_topup.png)
 
+<br>
+<br>
+
+# Categories API Testing
+run api in `postman` 
+### POST /categories
+### GET /categories
+### PATCH /categories/:categoryId
+### DELETE /categories/:categoryId
+
+
 
 
 
