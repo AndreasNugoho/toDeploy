@@ -241,6 +241,24 @@ https://todeploy-production.up.railway.app/products
 
 
 ### PUT /products/:productId
+```
+https://todeploy-production.up.railway.app/products
+```
+#### Endpoint PUT product hanya boleh di akses oleh admin
+```json
+{
+   "title": "Dell Alienware",
+   "price": 111,
+   "stock": 12,
+   "CategoryId" : 4
+}
+```
+![Alt text](images/edit_product.png)
+
+<br>
+<br>
+
+
 ### PATCH /products/:productId
 ### DELETE /products/:productId
 
