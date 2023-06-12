@@ -29,13 +29,22 @@ run api in `postman`
 
 ## User
 
-### Register
+### POST /users/register
 ```
 https://todeploy-production.up.railway.app/users/register
 ```
+#### Data Register
+```json
+{
+   full_name: "andre",
+   email: "andreas@gmail.com",
+   password: 123456,
+   gender: "male",
+}
+```
 ![Alt text](images/register.png)
 
-### Login
+### POST /users/login
 ```
 https://todeploy-production.up.railway.app/users/login
 ```
@@ -49,7 +58,7 @@ pastikan method adalah post
 
 #### Token
 * Token akan muncul ketika berhasil login
-* Simpan token pada notepad untuk di gunakan pada feature berikutnya
+* Simpan token untuk di gunakan pada feature berikutnya
 
 ### Edit
 ```
@@ -63,11 +72,7 @@ https://todeploy-production.up.railway.app/users/
 ```
 ![Alt text](images/register.png)
 
-## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
 
 
 
