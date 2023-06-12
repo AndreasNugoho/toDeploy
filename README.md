@@ -24,3 +24,34 @@ npm run admin (for seeder admin)
 Sesuaikan `config` dengan database postgres device. <br>
 Port dapat disesuaikan di `.env`
 
+# Using Api
+run api in `postman` 
+
+## User
+```
+### Register
+```
+https://todeploy-production.up.railway.app/users/register
+```
+
+### Login
+```
+https://todeploy-production.up.railway.app/users/login
+```
+
+### Edit
+```
+https://todeploy-production.up.railway.app/users/
+```
+
+### Delete
+```
+https://todeploy-production.up.railway.app/users/
+```
+```
+
+
+
+
+
+
