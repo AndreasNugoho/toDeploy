@@ -202,7 +202,13 @@ https://todeploy-production.up.railway.app/categories/1
 <br>
 <br>
 
-
+# Product API Testing
+run api in `postman` 
+### POST /products
+### GET /products
+### PUT /products/:productId
+### PATCH /products/:productId
+### DELETE /products/:productId
 
 
 
