@@ -205,6 +205,18 @@ https://todeploy-production.up.railway.app/categories/1
 # Product API Testing
 run api in `postman` 
 ### POST /products
+```
+https://todeploy-production.up.railway.app/products
+```
+#### Endpoint create product hanya boleh di akses oleh admin
+#### Token Admin 
+```json
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODY1NTk4Nzl9.rwa4AhhaUA9UhTUtg2seFmJ6A2vzAGISEzRZOKKGpJk"
+}
+```
+![Alt text](images/create_products.png)
+
 ### GET /products
 ### PUT /products/:productId
 ### PATCH /products/:productId
