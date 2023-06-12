@@ -296,7 +296,7 @@ https://todeploy-production.up.railway.app/products
 run api in `postman` 
 ### POST /transactions
 ```
-https://todeploy-production.up.railway.app/transactions/user
+https://todeploy-production.up.railway.app/transactions
 ```
 #### Endpoint ini harus di akses menggunakan token baik admin maupun user
 ![Alt text](images/create_transaction.png)
@@ -312,7 +312,21 @@ https://todeploy-production.up.railway.app/transactions/user
 <br>
 
 ### GET /transactions/user
+```
+https://todeploy-production.up.railway.app/transactions/user
+```
+![Alt text](images/get_user_transaction.png)
+#### Endpoint ini harus di akses menggunakan token baik admin maupun user
+
+<br>
+<br>
+
 ### GET /transactions/:transactionId
+```
+https://todeploy-production.up.railway.app/transactions/1
+```
+#### Endpoint ini hanya bisa di akses oleh admin
+![Alt text](images/get_byid_transaction.png)
 
 
 
