@@ -1,5 +1,7 @@
-# FinalProject3
-## Setup
+# Api Toko Belanja
+## Link Railway
+https://todeploy-production.up.railway.app/
+
 To run this project, install it locally using npm:
 
 ```
@@ -16,8 +18,7 @@ npm run admin (for seeder admin)
 }
 ```
 
-##Link Railway
-https://todeploy-production.up.railway.app/
+
 
 ## Notes
 Sesuaikan `config` dengan database postgres device. <br>
