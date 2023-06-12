@@ -39,7 +39,10 @@ https://todeploy-production.up.railway.app/users/register
 ```
 https://todeploy-production.up.railway.app/users/login
 ```
-<strong>pastikan method adalah post</strong>
+<br>
+```
+pastikan method adalah post
+```
 ![Alt text](images/login.png)
 #### Token
 * Token akan muncul ketika berhasil login
