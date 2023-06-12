@@ -13,7 +13,6 @@ router.get(
 );
 router.get(
   "/admin",
-  authorization.admin,
   transactionhistory.getTransactionAdmin
 );
 

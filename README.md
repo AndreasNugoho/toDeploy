@@ -295,8 +295,23 @@ https://todeploy-production.up.railway.app/products
 # Transaction API Testing
 run api in `postman` 
 ### POST /transactions
+```
+https://todeploy-production.up.railway.app/transactions/user
+```
+#### Endpoint ini harus di akses menggunakan token baik admin maupun user
+![Alt text](images/create_transaction.png)
+#### Data Buy Product
+```json
+{
+   "product_id" : 4,
+   "quantitiy": 1
+}
+```
+
+<br>
+<br>
+
 ### GET /transactions/user
-### GET /transactions/admin
 ### GET /transactions/:transactionId
 
 
