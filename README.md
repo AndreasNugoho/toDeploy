@@ -130,7 +130,7 @@ run api in `postman`
 ```
 https://todeploy-production.up.railway.app/categories
 ```
-#### Data Topup   
+#### Data category   
 ```json
 {
    "type": "Makanan",
@@ -141,19 +141,66 @@ https://todeploy-production.up.railway.app/categories
 hanya token admin yang dapat mengakses endpoint categories
 header berisi token admin
 ```
-#### Token Admin
- 
+#### Token Admin 
 ```json
 {
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODY1NTk4Nzl9.rwa4AhhaUA9UhTUtg2seFmJ6A2vzAGISEzRZOKKGpJk"
 }
 ```
+<br>
+<br>
 
 ### GET /categories
+```
+https://todeploy-production.up.railway.app/categories
+```
+![Alt text](images/get_category.png)
+```
+hanya token admin yang dapat mengakses endpoint categories
+header berisi token admin
+```
+#### Token Admin 
+```json
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODY1NTk4Nzl9.rwa4AhhaUA9UhTUtg2seFmJ6A2vzAGISEzRZOKKGpJk"
+}
+```
+<br>
+<br>
+
 ### PATCH /categories/:categoryId
+```
+https://todeploy-production.up.railway.app/categories/4
+```
+#### Data patch categories   
+```json
+{
+   "type": "Makanan",
+}
+```
+![Alt text](images/patch_category.png)
+#### Token Admin 
+```json
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODY1NTk4Nzl9.rwa4AhhaUA9UhTUtg2seFmJ6A2vzAGISEzRZOKKGpJk"
+}
+```
+<br>
+<br>
+
 ### DELETE /categories/:categoryId
-
-
+```
+https://todeploy-production.up.railway.app/categories/1
+```
+![Alt text](images/delete_category.png)
+#### Token Admin 
+```json
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODY1NTk4Nzl9.rwa4AhhaUA9UhTUtg2seFmJ6A2vzAGISEzRZOKKGpJk"
+}
+```
+<br>
+<br>
 
 
 
