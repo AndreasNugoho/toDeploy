@@ -117,6 +117,12 @@ https://todeploy-production.up.railway.app/users/
 ```
 https://todeploy-production.up.railway.app/users/topup
 ```
+#### Data Topup   
+```json
+{
+   "balance": 200000,
+}
+```
 ![Alt text](images/topup_user.png)
 
 #### Header Token
