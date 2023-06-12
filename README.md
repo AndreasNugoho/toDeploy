@@ -230,6 +230,14 @@ https://todeploy-production.up.railway.app/products
 <br>
 
 ### GET /products
+```
+https://todeploy-production.up.railway.app/products
+```
+#### Endpoint get product boleh di akses oleh admin dan user
+![Alt text](images/get_product.png)
+
+<br>
+<br>
 
 
 ### PUT /products/:productId
