@@ -245,6 +245,7 @@ https://todeploy-production.up.railway.app/products
 https://todeploy-production.up.railway.app/products
 ```
 #### Endpoint PUT product hanya boleh di akses oleh admin
+#### Data Edit Product
 ```json
 {
    "title": "Dell Alienware",
@@ -254,6 +255,12 @@ https://todeploy-production.up.railway.app/products
 }
 ```
 ![Alt text](images/edit_product.png)
+#### Token Admin 
+```json
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODY1NTk4Nzl9.rwa4AhhaUA9UhTUtg2seFmJ6A2vzAGISEzRZOKKGpJk"
+}
+```
 
 <br>
 <br>
