@@ -267,6 +267,8 @@ https://todeploy-production.up.railway.app/products
 
 
 ### PATCH /products/:productId
+
+
 ### DELETE /products/:productId
 
 
