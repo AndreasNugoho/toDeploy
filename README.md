@@ -29,6 +29,10 @@ run api in `postman`
 
 ## User
 
+<br>
+<br>
+
+
 ### POST /users/register
 ```
 https://todeploy-production.up.railway.app/users/register
@@ -43,7 +47,11 @@ https://todeploy-production.up.railway.app/users/register
    "gender": "male"
 }
 ```
-![Alt text](images/register.png)
+![Alt text](images/register_user.png)
+
+<br>
+<br>
+
 
 ### POST /users/login
 ```
@@ -68,6 +76,10 @@ pastikan method adalah post
 * Token akan muncul ketika berhasil login
 * Simpan token untuk di gunakan pada feature berikutnya
 
+<br>
+<br>
+
+
 ### PUT /users
 ```
 https://todeploy-production.up.railway.app/users/
@@ -79,16 +91,39 @@ https://todeploy-production.up.railway.app/users/
    "email": "andreas@gmail.com",
 }
 ```
-![Alt text](images/edit.png)
+![Alt text](images/edit_users.png)
 
 #### Header Token
-![Alt text](images/edit_header.png)
+![Alt text](images/edit_header_users.png)
 
-### Delete
+<br>
+<br>
+
+
+### DELETE /users
 ```
 https://todeploy-production.up.railway.app/users/
 ```
-![Alt text](images/register.png)
+![Alt text](images/delete_users.png)
+
+#### Header Token
+![Alt text](images/delete_header_users.png)
+
+<br>
+<br>
+
+
+### PATCH /users/topup
+```
+https://todeploy-production.up.railway.app/users/topup
+```
+![Alt text](images/topup_user.png)
+
+#### Header Token
+![Alt text](images/header_topup.png)
+
+
+
 
 
 
