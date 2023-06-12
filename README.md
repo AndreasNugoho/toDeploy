@@ -141,7 +141,8 @@ https://todeploy-production.up.railway.app/categories
 hanya token admin yang dapat mengakses endpoint categories
 header berisi token admin
 ```
-
+#### Token Admin
+ 
 ```json
 {
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODY1NTk4Nzl9.rwa4AhhaUA9UhTUtg2seFmJ6A2vzAGISEzRZOKKGpJk"
