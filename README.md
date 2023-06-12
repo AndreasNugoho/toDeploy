@@ -34,12 +34,13 @@ run api in `postman`
 https://todeploy-production.up.railway.app/users/register
 ```
 #### Data Register
+
 ```json
 {
-   full_name: "andre",
-   email: "andreas@gmail.com",
-   password: 123456,
-   gender: "male",
+   "full_name": "andre",
+   "email": "andreas@gmail.com",
+   "password": "123456",
+   "gender": "male"
 }
 ```
 ![Alt text](images/register.png)
