@@ -53,7 +53,14 @@ https://todeploy-production.up.railway.app/users/login
 ```
 pastikan method adalah post
 ```
-<br>
+#### Data Login
+
+```json
+{
+   "email": "andreas@gmail.com",
+   "password": "123456",
+}
+```
 
 ![Alt text](images/login.png)
 
