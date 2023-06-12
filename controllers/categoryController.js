@@ -1,0 +1,110 @@
+const { Category, Product } = require('../models')
+
+class categoryController {
+    
+    static async getAllCategory(req, res) { 
+        try {
+            const result = await Category.findAll({ include: Product })
+            res.status(201).json({category:result})
+
+        } catch (error) {
+            if (error.name === 'SequelizeValidationError' || error.name === 'SequelizeUniqueConstraintError') {
+                const validasiErorr = {};
+                error.errors.map((er) => {
+                    validasiErorr[er.path] = er.message;
+                });
+                return res.status(400).json({"error":validasiErorr});
+            } else {
+                res.status(error?.code || 500).json(error)
+            } 
+        }
+    }
+    static async createCategory(req, res) {
+        try {
+            const { 
+                type
+            } = req.body
+            const data = await Category.create({
+                type
+            })
+            const response = {
+                id: data.id,
+                type: data.type,
+                sold_product_amount: data.sold_product_amount,
+                createdAt: data.createdAt.toISOString().split("T")[0],
+                updatedAt: data.updatedAt.toISOString().split("T")[0]
+            }
+
+            res.status(201).json({ category: response })
+        } catch (error) {
+            if (error.name === 'SequelizeValidationError' || error.name === 'SequelizeUniqueConstraintError') {
+                const validasiErorr = {};
+                error.errors.map((er) => {
+                    validasiErorr[er.path] = er.message;
+                });
+                return res.status(400).json({"error":validasiErorr});
+            }else{
+                res.status(error?.code || 500).json(error)
+            } 
+        }
+    }
+
+    static async updateCategory(req, res) { 
+        try {
+            const { id } = req.params
+            const { type } = req.body
+            const result = await Category.update({
+                type,
+                updatedAt: new Date()
+            }, {
+                where: {
+                    id
+                },
+                retruning: true,
+                individualHooks: true
+            })
+            const userView = {
+                id:result[1][0].id,
+                type: result[1][0].type,
+                sold_product_amount: result[1][0].sold_product_amount,
+                createdAt: result[1][0].createdAt.toISOString().split("T")[0],
+                updatedAt: result[1][0].updatedAt.toISOString().split("T")[0]
+            }
+            res.status(201).json({ category: userView })
+        } catch (error) {
+            if (error.name === 'SequelizeValidationError' || error.name === 'SequelizeUniqueConstraintError') {
+                const validasiErorr = {};
+                error.errors.map((er) => {
+                    validasiErorr[er.path] = er.message;
+                });
+                return res.status(400).json({"error":validasiErorr});
+            } else {
+                res.status(error?.code || 500).json(error)
+            }
+        }
+    }
+
+    static async deleteCategory(req, res) { 
+        try {
+            const { id } = req.params
+            const result = await Category.destroy({
+                where:{id}
+            })
+            return res.status(200).json({ message: 'Category has been successfully deleted' })
+        } catch (error) {
+            if (error.name === 'SequelizeValidationError' || error.name === 'SequelizeUniqueConstraintError') {
+                const validasiErorr = {};
+                error.errors.map((er) => {
+                    validasiErorr[er.path] = er.message;
+                });
+                return res.status(400).json({"error":validasiErorr});
+            }else{
+                res.status(error?.code || 500).json(error)
+            }
+        }
+    }
+
+
+}
+
+module.exports = categoryController
