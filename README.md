@@ -33,21 +33,25 @@ run api in `postman`
 ```
 https://todeploy-production.up.railway.app/users/register
 ```
+![Alt text](images/register.png)
 
 ### Login
 ```
 https://todeploy-production.up.railway.app/users/login
 ```
+![Alt text](images/register.png)
 
 ### Edit
 ```
 https://todeploy-production.up.railway.app/users/
 ```
+![Alt text](images/register.png)
 
 ### Delete
 ```
 https://todeploy-production.up.railway.app/users/
 ```
+![Alt text](images/register.png)
 
 
 
