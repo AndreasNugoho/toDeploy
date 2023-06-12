@@ -127,6 +127,27 @@ https://todeploy-production.up.railway.app/users/topup
 # Categories API Testing
 run api in `postman` 
 ### POST /categories
+```
+https://todeploy-production.up.railway.app/categories
+```
+#### Data Topup   
+```json
+{
+   "type": "Makanan",
+}
+```
+![Alt text](images/categories_create.png)
+```
+hanya token admin yang dapat mengakses endpoint categories
+header berisi token admin
+```
+
+```json
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODY1NTk4Nzl9.rwa4AhhaUA9UhTUtg2seFmJ6A2vzAGISEzRZOKKGpJk"
+}
+```
+
 ### GET /categories
 ### PATCH /categories/:categoryId
 ### DELETE /categories/:categoryId
