@@ -28,7 +28,7 @@ Port dapat disesuaikan di `.env`
 run api in `postman` 
 
 ## User
-```
+
 ### Register
 ```
 https://todeploy-production.up.railway.app/users/register
@@ -47,7 +47,6 @@ https://todeploy-production.up.railway.app/users/
 ### Delete
 ```
 https://todeploy-production.up.railway.app/users/
-```
 ```
 
 
