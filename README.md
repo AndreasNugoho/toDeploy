@@ -53,7 +53,7 @@ https://todeploy-production.up.railway.app/users/login
 ```
 pastikan method adalah post
 ```
-#### Data Login
+#### Data Login   
 
 ```json
 {
@@ -68,11 +68,21 @@ pastikan method adalah post
 * Token akan muncul ketika berhasil login
 * Simpan token untuk di gunakan pada feature berikutnya
 
-### Edit
+### PUT /users
 ```
 https://todeploy-production.up.railway.app/users/
 ```
-![Alt text](images/register.png)
+#### Data Edit   
+```json
+{
+   "full_name": "Andreas Nugroho",
+   "email": "andreas@gmail.com",
+}
+```
+![Alt text](images/edit.png)
+
+#### Header Token
+![Alt text](images/edit_header.png)
 
 ### Delete
 ```
