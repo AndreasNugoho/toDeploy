@@ -33,7 +33,7 @@ class transactionController {
           });
 
           const response = {
-            totalPrice: transactionHistory.total_price,
+            totalPrice: new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(transactionHistory.total_price),
             quantity: transactionHistory.quantity,
             product_name: product.title,
           };
