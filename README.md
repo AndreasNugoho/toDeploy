@@ -267,10 +267,30 @@ https://todeploy-production.up.railway.app/products
 
 
 ### PATCH /products/:productId
+```
+https://todeploy-production.up.railway.app/products
+```
+#### Endpoint PATCH product hanya boleh di akses oleh admin
+#### Data Edit CategoryId
+```json
+{
+   "CategoryId" : 6
+}
+```
+![Alt text](images/edit_category_product.png)
 
+<br>
+<br>
 
 ### DELETE /products/:productId
+```
+https://todeploy-production.up.railway.app/products
+```
+#### Endpoint PATCH product hanya boleh di akses oleh admin
+![Alt text](images/delete_product.png)
 
+<br>
+<br>
 
 
 
