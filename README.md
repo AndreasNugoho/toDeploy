@@ -216,8 +216,12 @@ https://todeploy-production.up.railway.app/products
 }
 ```
 ![Alt text](images/create_products.png)
+<br>
+<br>
 
 ### GET /products
+
+
 ### PUT /products/:productId
 ### PATCH /products/:productId
 ### DELETE /products/:productId
