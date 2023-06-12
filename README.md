@@ -39,7 +39,12 @@ https://todeploy-production.up.railway.app/users/register
 ```
 https://todeploy-production.up.railway.app/users/login
 ```
-![Alt text](images/register.png)
+![Alt text](images/login.png)
+##### Token
+```
+Token akan muncul ketika berhasil login
+* Simpan token pada notepad untuk di gunakan pada feature berikutnya
+```
 
 ### Edit
 ```
